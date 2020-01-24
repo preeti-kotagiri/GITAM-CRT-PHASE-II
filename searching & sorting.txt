@@ -1,0 +1,115 @@
+Linear search:
+#define n 10
+void main()
+{
+int arr[n],key,flag=0;
+scanf("%d",&key);
+
+for(int i=0;i<n;i++)
+    scanf("%d",&arr[i]);
+
+for(int i=0;i<n;i++)
+    if (arr[i]==key)
+        flag++;
+
+(flag==0)?printf("element not found"):printf("element found");
+}
+
+Binary search:
+#define n 5
+void main()
+{
+int arr[n],key,flag=0,mid;
+scanf("%d",&key);
+
+for(int i=0;i<n;i++)
+    scanf("%d",&arr[i]);
+
+for(int i=0; i<n; i++)
+    {
+        for(int j=i+1; j<n; j++)
+        {
+            if(arr[j] <arr[i])
+            {
+                int tmp = arr[i];
+                arr[i] = arr[j];
+                arr[j] = tmp;
+            }
+        }
+    }
+mid = n/2;
+if(arr[mid]==key)
+    printf("element found");
+else if(key>arr[mid])
+    for(int i=mid+1;i<n;i++)
+        if(arr[i]==key)
+            flag++;
+else if(key<arr[mid])
+    for(int i=0;i<mid;i++)
+        if(arr[i]==key)
+            flag++;
+
+(flag==0)?printf("not found"):printf("found");
+}
+
+Bubble sort:
+#define n 5
+void main()
+{
+int arr[n];
+for(int i=0;i<n;i++)
+    scanf("%d",&arr[i]);
+for(int i=0;i<n;i++)
+    for(int j=i+1;j<n;j++)
+        if(arr[j]<arr[i])
+        {
+            int temp=arr[i];
+            arr[i]=arr[j];
+            arr[j]=temp;
+        }
+for(int i=0;i<n;i++)
+    printf("%d ",arr[i]);
+}
+
+Selection sort:
+#define n 5
+void main()
+{
+int arr[n];
+for(int i=0;i<n;i++)
+    scanf("%d",&arr[i]);
+for(int i=0;i<n-1;i++)
+{
+    int min = i;
+    for(int j=i+1;j<n;j++)
+        if(arr[j]<arr[min])
+            min=j;
+    int temp=arr[i];
+    arr[i]=arr[min];
+    arr[min]=temp;
+}
+for(int i=0;i<n;i++)
+    printf("%d ",arr[i]);
+}
+
+Insertion sort:
+#define n 5
+void main()
+{
+int arr[n],key;
+for(int i=0;i<n;i++)
+    scanf("%d",&arr[i]);
+for(int i=1;i<n;i++)
+{
+    key=arr[i];
+    int j=i-1;
+    while(j>=0 && arr[j]>key)
+    {
+        arr[j+1]=arr[j];
+        j=j-1;
+    }
+    arr[j+1]=key;
+}
+for(int i=0;i<n;i++)
+    printf("%d ",arr[i]);
+}
