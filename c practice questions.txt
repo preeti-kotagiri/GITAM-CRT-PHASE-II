@@ -1,0 +1,1000 @@
+
+Control flow statements : (Conditional and Loops)
+Program 1:
+The program must accept an integer N as the input. Need to print the largest digit from the given number.
+Boundary Condition(s):
+1 <= N <= 100000
+Example Input/Output 1:
+Input1:
+6918
+Output:
+9
+Input2:
+178511
+Output:
+8
+
+Program 2:
+The program must accept an integer N as the input. Need to print the output in the following manner.
+Boundary Condition(s):
+1 <= N <= 100000
+Example Input/Output 1:
+Input1:
+1889
+Output:
+16
+
+Input2:
+19872
+Output:
+10
+
+Program 3:
+The program must accept an integer N as the input. Need to print the output in the following manner.
+Boundary Condition(s):
+1 <= N <= 100000
+Example Input/Output 1:
+Input1:
+145
+Output:
+YES
+Input2:
+123
+Output:
+NO
+Explanation : 
+Individual digit factorial sum is the same as the original number then need to print YES otherwise need to print NO
+
+145 - 1! + 4! + 5! - 1 + 24 + 120 -- 145 -- YES
+123 - 1! + 2! + 3! - 1 + 2 + 6 - 9 -- NO
+ 
+
+
+Program 4:
+The program must accept an integer N the input. The program must print the desired pattern as shown in the Example Input/Output section.
+Boundary Condition(s):
+1 <= N <= 10^8
+Input Format:
+The first line contains the value of N.
+Output Format:
+The list of lines containing the desired pattern as shown in the Example Input/Output sections.
+Example Input/Output 1:
+Input:
+41325
+Output:
+|****
+|*
+|***
+|**
+|*****
+Example Input/Output 2:
+Input:
+60710
+Output:
+|******
+|
+|*******
+|*
+|
+
+
+Program 5:
+The program must accept an integer N as the input. Need to print the output in the following manner.
+Boundary Condition(s):
+1 <= N <= 100000
+Example Input/Output 1:
+145	
+Output:
+Five Four One
+Example Input/Output 2:
+123	
+Output:
+Three two one
+Example Input/Output 2:
+159
+Output:
+Nine Five one
+
+Program 6:
+The program must accept two integers N1,N2 as the input. Find the count of the palindrome numbers between two ranges.
+Boundary Condition(s):
+1 <= N <= 100000
+Example Input/Output 1:
+10,30 
+Output:
+2
+Example Input/Output 2:
+10,100 
+Output:
+9
+
+Program 7:
+Nth term in Mixed Geometric Series:-  The program must accept an integer N as the input. The program must print the Nth term in the series as the output.
+NOTE : The order of series must be 1, 1, 2, 3, 4, 9, 8, 27, 16, 81, 32, 243, 64, 729, 128, 2187, 256, 6561, 512, 19683, ... This series is a mixture of 2 series - all the odd terms in this series form a geometric series and all the even terms form another geometric series.
+
+Test case1:-
+Input : 3
+Output: 2
+
+Test case2:-
+Input : 21
+Output: 1024
+
+
+
+
+
+Program 8:
+Nth term in Mixed Geometric Series:-
+                                  The program must accept an integer N as the input. The program must print the Nth term in the series as the output.
+NOTE : The order of series must be 2 1 4 2 6 3 8 4 10 5 12 6 14 7 16 8 18 9 20 10 22 11 24 12 26 .......... This series is a mixture of 2 series - all the odd terms in this series form a geometric series and all the even terms form another geometric series.
+
+Constraints:-
+		2<=N<=1000
+
+Test Cases:-
+------------
+NthNumberSeries(2)  0
+NthNumberSeries(5)  4
+NthNumberSeries(15) 14
+
+Program 9:
+Print Holes in the Given Number	
+	Mr. Robert is a school kid at St Joseph Academy Catholic High School and he has started learning of algebra. Robert and his friends are playing a game on the number system. There were a couple of rules are implemented in this game.
+Rule 1: The digits 0, 4, 6, 9 have a single hole so that the count is 1
+Rule 2: The digits 1, 2, 3, 5, 7 does not have a hole so that the count is 0
+Rule 3: The digit 8 has two holes so that the count is 2
+
+If anyone of Robert friend is given some number he has to calculate the number of existing the given number.
+Your Task is to write a Computer program to evaluate the count of holes are present in the given number
+
+Boundary Condition(s):
+1 <= N <= 100000
+Example Input/Output 1:
+12589
+Output:
+3
+Example Input/Output 2:
+147520
+Output:
+2
+Program 10:
+The program must accept three integers N(represents a digit), X and Y as input. The program must print the count of N in the digits of each integer(s) from X to Y (exclusive of X and Y).
+
+Boundary Condition(s):
+0 <= N <= 9
+1 < Y <= 99999999
+0 <= X < Y
+
+Input Format:
+The first line contains the integer value of N.
+The second line contains the integers X and Y separated by a space.
+
+Output Format:
+The first line contains the count of N in the digits of each integer(s) from X to Y.
+
+Example Input/Output 1:
+Input:
+5
+50 55
+
+Output:
+4
+
+Explanation:
+The integers between 50 and 55 are 51, 52, 53 and 54. 
+Here, 5 has occurred 4 times.
+Hence 4 is printed as the output
+
+Example Input/Output 2:
+Input:
+7
+325 654
+
+Output:
+63
+
+
+
+
+
+Program 11:
+Dogs and Cats:-
+ Chef is a farmer and a pet lover. He has a lot of his favourite pet’s cats and dogs in the barn. He does not know their exact count. But he knows that there are C cats and D dogs in the barn. Also, one day went to field and found that there were L legs of the animals touching the ground. Chef knows that cats love to ride on the dogs. So, they might ride on the dogs, and their legs won't touch the ground and Chef would miss counting their legs. Chef's dogs are strong enough to ride at max two cats on their back.
+It was a cold foggy morning, when Chef did this counting. So, he is now wondering whether he counted the legs properly or not. Specifically, he is wondering is there some possibility of his counting being correct. Please help Chef in finding it.
+Input
+First line of the input contains an integer T denoting the number of test cases. T test cases follow.The only line of each test case contains three space separated integers C, D, L denoting number of the cats, number of the dogs and number of legs of animals counted by Chef, respectively.
+Output
+For each test case, output a single line containing a string "yes" or "no" (both without quotes) according to the situation.
+Constraints
+●	1 ≤ T ≤ 105
+●	0 ≤ C, D, L ≤ 109
+Subtasks
+Subtask #1 (20 points)
+●	1 ≤ T ≤ 104
+●	0 ≤ C, D ≤ 102
+Example
+Input:
+3
+1 1 8
+1 1 4
+1 1 2 
+Output:
+yes
+yes
+no
+
+	
+Program 12:
+Yaswanth and Sweety are off to the wedding of a close relative. This time they have to travel without their guardians. Yaswanth got very interested in the arrangement of seats inside the train coach.
+The entire coach could be viewed as an arrangement of consecutive blocks of size 8. 
+Berth Number   Compartment 
+ 1 -  8           	1 
+ 9 - 16           	2 
+17 - 24               3 
+... and so on
+Each of these size-8 blocks are further arranged as: 
+ 1LB,  2MB,  3UB,  4LB,  5MB,  6UB,  7SL,  8SU 
+ 9LB, 10MB, ...
+ ...  
+ ...
+Here LB denotes lower berth, MB middle berth and UB upper berth.
+The following berths are called Train-Partners:
+ 
+3UB   |  6UB 
+2MB   |  5MB 
+1LB   |  4LB 
+7SL   |  8SU 
+and the pattern is repeated for every set of 8 berths.
+Yaswanth and Sweety are playing this game of finding the train partner of each berth. Can you write a program to do the same?
+Input
+The first line of input contains a single integer T, denoting the number of test cases to follow.
+Each of the next T lines contain a single integer N, the berth number whose neighbour is to be found out.
+Output
+The output should contain exactly T lines each containing the berth of the neighbour of the corresponding seat.
+Constraints
+Subtasks
+Subtask #1 (50 points):
+●	1 ≤ T ≤ 8
+●	1 ≤ N ≤ 8
+Subtask #2 (50 points):
+●	1 ≤ T ≤ 100
+●	1 ≤ N ≤ 500
+Example
+Input:
+3
+1
+5
+3 
+Output:
+4LB
+2MB
+6UB
+Program 13:
+You are given 3 numbers a, b and x. You need to output the multiple of x which is closest to ab. If more than one answer exists, display the smallest one.
+Input Format
+The first line contains T, the number of test cases. 
+T lines follow, each line contains 3 space separated integers (a, b and x respectively)
+Constraints
+1 ≤ T ≤ 105 
+1 ≤ x ≤ 109 
+0 < ab ≤ 109 
+1 ≤ a ≤ 109 
+-109 ≤ b ≤ 109
+Output Format
+For each test case, output the multiple of x which is closest to ab
+Sample Input 0
+3
+349 1 4
+395 1 7
+Sample Output 0
+348
+392
+Explanation 0
+The closest multiple of 4 to 349 is 348. 
+The closest multiple of 7 to 395 is 392. 
+Program 14:
+Given a paper of size A x B. Task is to cut the paper into squares of any size. Find the minimum number of squares that can be cut from the paper.
+Input:
+The first line of input contains an integer T denoting the number of test cases. Then T test cases follow. Each test case contains two integer A and B denoting the two sizes of the paper.
+Output:
+Print the minimum number of squares that can be cut from the paper.
+Constraints:
+1<=T<=10^5
+1<=A<=10^5
+1<=B<=10^5
+Example:
+Input:
+2
+13 29
+30 35
+Output:
+9
+7
+Program 15:
+A Milkman serves milk in packaged bottles of varied sizes. The possible size of the bottles is {1, 5, 7 and 10} litres. He wants to supply desired quantity using as less bottles as possible irrespective of the size. Your objective is to help him find the minimum number of bottles required to supply the given demand of milk.
+Input Format:
+First line contains number of test cases N 
+Next N lines, each containing a positive integer Li which corresponds to the demand of milk.
+Output Format:
+For each input Li, print the minimum number of bottles required to fulfill the demandConstraints:
+1 <= N <= 1000
+Li> 0
+1 <= i <= N
+Sample Input and Output
+SNo.	Input	Output
+1	
+
+2
+17
+65	
+
+
+2
+7
+ Explanation: 
+Number of test cases is 2 
+In the first test case, demand of milk is 17 litres which can be supplied using minimum of 2 bottles as follows 1 x 10 litres and 1 x 7 litres 
+In the second test case, demand of milk is 65 litres which can be supplied using minimum of 7 bottles as follows 6 x 10 litres and 1 x 5 litres 
+
+Program 16:	
+Program 1. The program must accept an integer N as the input. The program must print the Fibonacci series in the reverse order as the output.
+
+Boundary Condition(s):
+5 <= N <= 85
+
+Input Format:
+The first line contains the value of N.
+
+Output Format:
+The first line contains the fibonacci series separated by a space.
+
+Example Input/Output 1:
+Input:
+5
+
+Output:
+3 2 1 1 0
+
+Example Input/Output 2:
+Input:
+12
+
+Output:
+89 55 34 21 13 8 5 3 2 1 1 0
+
+
+
+Program 17:
+
+The program must accept an integer N as the input. The program must print the digits surrounded by even digits on both sides. The first and last digits have only one digit adjacent digit to them. So consider only the single adjacent digit for them. If there is no digit surrounded by even digits, then the program must print -1 as the output.
+
+Boundary Condition(s):
+11 <= N <= 999999999
+
+Input Format:
+The first line contains the value N.
+
+Output Format:
+The first line contains either the digits having even adjacent digits or -1.
+
+Example Input/Output 1:
+Input:
+14689025
+
+Output:
+1695
+
+Explanation:
+The adjacent digit of 1 is 4 (even number). So 1 is printed.
+The adjacent digits of 4 are 1 and 6 (only 6 is even). So 4 is not printed.
+The adjacent digits of 6 are 4 and 8 (both are even numbers). So 6 is printed.
+The adjacent digits of 8 are 6 and 9 (only 6 is even). So 8 is not printed.
+The adjacent digits of 9 are 8 and 0 (both are even numbers). So 9 is printed.
+The adjacent digits of 0 are 9 and 2 (only 2 is even). So 0 is not printed.
+The adjacent digits of 2 are 0 and 5 (only 0 is even). So 2 is not printed.
+The adjacent digit of 5 is 2 (even number). So 5 is printed.
+Hence the output is 1695.
+
+Example Input/Output 2:
+Input:
+1357935
+
+Output:
+-1
+
+Program 18:
+Given N integers as input, the program must print the median of the array. The median of the array is defined as the nearest element to the average of the array.
+Boundary Condition(s):
+2 <= N <= 100
+Input Format:
+The first line contains the integer value N.
+The second line contains N integers separated by space.
+Output Format
+The first line contains the median of an array.
+Example Input/Output 1:
+Input:
+5
+12 34 45 56 67
+Output:
+45
+Explanation:
+Sum of the given N integers = 214
+Average = 42.8
+The nearest integer to 42.8 in the given array is 45.
+Hence 45 is the output.
+Example Input/Output 2:
+Input:
+3
+10 11 12
+Output:
+11
+Explanation:
+Sum of the given N integers = 33
+Average = 11
+The nearest integer to 11 in the given array is 11.
+Hence 11 is the output.
+
+
+Program 19:
+The program must accept N integers as the input. The program must print the sum of non repeated integers as the output. If there is no non repeated integer then the program must print -1 as the output.
+
+Boundary Condition(s):
+1 <= N <= 10^5
+
+Input Format:
+The first line contains the value of N.
+The second line contains N integers separated by space(s).
+
+Output Format:
+The first line contains either the sum of non repeated integers or -1.
+
+Example Input/Output 1:
+Input:
+5
+1 2 3 2 5
+
+Output:
+9
+
+Explanation:
+Non repeated integers are 1, 3 and 5.
+So, the sum of 1, 3 and 5 is 9.
+Hence the output is 9
+
+Example Input/Output 2:
+Input:
+7
+87 23 87 23 67 87 67
+
+Output:
+-1
+Program 20:
+The program must accept N integers as the input. The program must print the number of integer values repeated as the output.
+
+Boundary Condition(s):
+2 <= N <= 1000
+
+Input Format:
+The first line contains N.
+The second line contains the N integer values separated by a space.
+
+Output Format:
+The first line contains the integer value representing the repeated integer values count.
+
+Example Input/Output 1:
+Input:
+9
+10 20 20 30 40 10 10 50 99
+
+Output:
+3
+
+Explanation:
+The repeated values are 20 10 10.
+Hence the output is 3
+
+Example Input/Output 2:
+Input:
+5
+1 2 3 4 2
+
+Output:
+1
+
+Program 21:
+The program must accept N integers as the input. The program must print only the distinct values ignoring the repetition of the values which have appeared earlier in the input sequence.
+
+Boundary Condition(s):
+2 <= N <= 100
+
+Input Format:
+The first line contains N.
+The second line contains the N integer values separated by a space.
+
+Output Format:
+The distinct integer values in the same order of occurrence as the input sequence.
+
+Example Input/Output 1:
+Input:
+6
+10 20 20 30 40 10
+
+Output:
+10 20 30 40
+
+Example Input/Output 2:
+Input:
+4
+3 4 2 1
+
+Output:
+3 4 2 1
+
+Program 22:
+The program must accept N integers as the input. The program must print the sum of duplicate integers (occurring two or more times) as the output. If there is no duplicate integer then the program must print -1 as the output.
+
+Boundary Condition(s):
+1 <= N <= 10^6
+
+Input Format:
+The first line contains the value of N.
+The second line contains N integers separated by space(s).
+
+Output Format:
+The first line contains either the sum of duplicate integers or -1.
+
+Example Input/Output 1:
+Input:
+10
+10 20 30 40 10 50 20 60 10 70
+
+Output:
+30
+
+Explanation:
+The duplicate integers are 10 and 20. So the sum of 10 and 20 is 30.
+Hence the output is 30
+
+Example Input/Output 2:
+Input:
+3
+10 20 30
+
+Output:
+-1
+
+Example Input/Output 3:
+Input:
+5
+10 20 30 20 30
+
+Output:
+50
+
+Explanation:
+The duplicate integers are 20 and 30. So their sum is 50 which is printed as the output.
+
+
+Program 23:
+The program must accept two integers M and N as the input. The program must print YES if the sum of unique digits in M and the sum of unique digits in N are equal. Else the program must print NO as the output.
+
+Boundary Condition(s):
+1 <= M, N <= 10^9
+
+Input Format:
+The first line contains the values of M and N separated by a space.
+
+Output Format:
+The first line contains either YES or NO.
+
+Example Input/Output 1:
+Input:
+2452 9222
+
+Output:
+YES
+
+Explanation:
+The sum of unique digits in 2452 is 11 (2+4+5).
+The sum of unique digits in 9222 is 11 (9+2).
+So the sum of unique digits in 2542 and 9222 are equal.
+Hence the output is YES
+
+Example Input/Output 2:
+Input:
+121 3035
+
+Output:
+NO
+Program 24:
+Given input as n*n matrix and find the output in the following manner.
+(where n is always n is an odd number)
+1 2 3 
+4 5 6
+7 8 9
+
+Output:- 15 - 15 = 0 ( Dig Difference = Fwd Dig - Reverse Dig)
+
+Program 25:
+Given input as n*n matrix and find the output in the following manner.
+
+4 5 6 7
+1 5 9 1
+4 6 8 2
+9 8 7 6
+
+Output:-2 0 4 2 -- Calculate the Even numbers in each row of given input grid
+
+
+
+
+Program 26:
+Given input as n*n matrix and find the output in the following manner.
+
+9 5 6 7
+1 5 8 1
+4 6 7 2
+9 8 7 6
+
+Output:-9 8 7 9 -- Calculate the Large number in each row of given input grid 
+
+Program 27:
+
+The program must accept an integer matrix of size MxN as the input. The program must print the desired pattern as shown in the Example Input/Output section.
+
+Boundary Condition(s):
+1 <= M, N <= 50
+1 <= Each Integer Value <= 999
+
+Input Format:
+The first line contains the integers M and N separated by a space.
+The next M lines each contain N integers separated by space(s).
+
+Output Format:
+The first M+2 lines contain the desired pattern as shown in the Example Input/Output sections.
+
+Example Input/Output 1:
+Input:
+3 4
+8 6 5 8
+4 8 5 2
+3 7 6 8
+
+Output:
+* * * * * *
+* 8 6 5 8 *
+* 4 8 5 2 *
+* 3 7 6 8 *
+* * * * * *
+
+Example Input/Output 2:
+Input:
+5 3
+7 2 4
+2 5 5
+4 9 1
+5 2 6
+2 9 2
+
+Output:
+* * * * *
+* 7 2 4 *
+* 2 5 5 *
+* 4 9 1 *
+* 5 2 6 *
+* 2 9 2 *
+* * * * *
+
+Program 28:
+The program must accept an integer matrix of size MxN as the input. The program must print the desired pattern
+
+1 2 3 4
+4 5 6 7
+7 8 9 1
+1 2 3 4
+
+Output:- 5 + 6 + 8 + 9 -- 28 (Need to add the numbers which is not appeared on the borders.)
+
+Program 29:
+The program must accept an integer matrix of size MxN as the input. The program must print the desired pattern
+
+1 2 3 4
+4 5 6 7
+7 8 9 1
+1 2 3 4
+
+Test case 1:
+k = 1
+Output:-
+
+5 6 7
+8 9 1
+2 3 4
+
+Test case 2:
+k = 2
+Output:-
+9 1
+3 4
+
+Test case 3:
+k= 3
+Output:-
+4
+
+Test case 4:
+k = 4 / k = 5 / k = 100
+Output:-
+-1
+
+
+
+
+
+
+
+Program 30:
+
+Input:-
+n = 5
+
+Output:-
+1	2	3	4	5
+16	17	18	19	6
+15	24	25	20	7
+14	23	22	21	8
+13	12	11	10	9
+
+
+Program 31:
+YourProgram has to read the size of an array and according to the size of an array it has to read the items of an array.
+
+Sample Input/Output:-
+5
+9 8 7 4 1
+8
+Present
+121
+Not present
+
+
+
+Program 32:
+Given a size of array and set of values as an array and print the output in the following manner.
+Sample Input/Output:-
+9
+8 9 7 8 9 1 5 6 9 
+9
+1 4 8
+
+Program 33:
+Given a size of array and set of values as an array and print the output in the following manner.
+Sample Input/Output:-
+9
+8 9 7 8 9 1 5 6 9
+8
+! !!!!
+
+Program 34:
+Your Program needs to accept a string as input and need to print the output as count of lower and upper case characters from the string.
+Sample Input/Output:
+WorkingAPP - L:6 U:4
+PromiZEIT    - L:5 U:5 
+
+
+
+Program 35:
+Your program needs to read the string as input and the string contains numbers and characters(alphanumeric). You need print only digits from the given string
+
+Sample Input/Output:-
+PromizeIT1889 -- 1889
+Dhyanahita1563 -- 1563
+7895app -- 7895
+application159app -- 159
+
+Program 36:
+Your program needs to read the string as input and the string contains numbers and characters(alphanumeric).You need to print the output as sum of only even digits from the given string.
+Sample Input/Output:-
+PromizeIT1889 -- 16
+ap7520   -- 2
+appli99663 -- 12
+Program 37:
+
+Your program needs to read the string as input and you need print the output as change of case from the input string.
+
+Sample Input/Output:
+WorkingAPP - wORKINGapp 
+PromiZEIT    - pROMIzeit
+
+Program 38:
+Your Program has to read one string as well as one character and you need to remove all the occurrences of the character.
+Sample Input/Output:-
+HebeonTech,e -- HbonTch
+
+Program 39:
+Your Program need to accept a string and a character and you need print the string such that it has to eliminate the first occurrence and remaining string is as it is.
+Sample Input/Output:-
+HebeonTech,e -- HbeonTech
+
+Program 40:
+Your program need to accept a string (alphanumeric) includes white spaces also and You need to print the output as second word in uppercase.
+Sample Input/Output:
+application Testing -- TESTING
+Abc Test app	    -- TEST
+
+
+
+Program 41:
+The program must accept two string values S1 and S2. The program must print the pattern as shown in the 
+Example Input/Output sections.
+Boundary Condition(s):
+1 <= Length of S1, S2 <= 100
+Example Input/Output 1:
+Input:
+bad water
+Output:
+bw
+aa
+dt
+*e
+*r
+Example Input/Output 2:
+Input:
+gionee kkr
+Output:
+gk
+ik
+or
+n*
+e*
+e*
+
+
+
+
+
+Program 42:
+The program must accept a  string value S1. The program must print the pattern as shown in the 
+Boundary Condition(s):
+1 <= Length of S1, S2 <= 100
+Example Input/Output 1:
+orange
+Output: puboif
+Example Input/Output 2
+mergesort
+Output: ofuifupuu
+
+Program 43:
+The program must accept N string values as the input. The program must print the string values without their first and last characters as the output.
+
+Boundary Condition(s):
+1 <= N <= 50
+3 <= Length of each string <= 100
+
+Input Format:
+The first line contains the integer value of N.
+The next N lines contain the string values.
+
+Output Format:
+The first N lines contain the string values without their first and last characters.
+
+Example Input/Output 1:
+Input:
+3
+apple
+mango
+orange
+
+Output:
+ppl
+ang
+rang
+
+Explanation:
+The first and last characters of apple are a and e. So a and e are removed. Hence ppl is printed.
+The first and last characters of mango are m and o. So m and o are removed. Hence ang is printed.
+The first and last characters of orange are o and e. So o and e are removed. Hence rang is printed.
+
+Example Input/Output 2:
+Input:
+2
+PROGRAM
+!@#$%^&*(
+
+Output:
+ROGRA
+@#$%^&*
+
+Program 44:
+The program must accept an integer N as the input. The program must print the pattern as shown in the Example Input/Output sections.
+
+Boundary Condition(s):
+5 <= N <= 50
+
+Input Format:
+The first line contains the value of N.
+
+Output Format:
+The first N lines contain the desired pattern as shown in the Example Input/Output sections.
+
+Example Input/Output 1:
+Input:
+15
+
+Output:
+***************
+**-----------**
+*-*---------*-*
+*--*-------*--*
+*---*-----*---*
+*----*---*----*
+*-----*-*-----*
+*------*------*
+*-----*-*-----*
+*----*---*----*
+*---*-----*---*
+*--*-------*--*
+*-*---------*-*
+**-----------**
+***************
+
+Example Input/Output 2:
+Input:
+20
+
+Output:
+********************
+**----------------**
+*-*--------------*-*
+*--*------------*--*
+*---*----------*---*
+*----*--------*----*
+*-----*------*-----*
+*------*----*------*
+*-------*--*-------*
+*--------**--------*
+*--------**--------*
+*-------*--*-------*
+*------*----*------*
+*-----*------*-----*
+*----*--------*----*
+*---*----------*---*
+*--*------------*--*
+*-*--------------*-*
+
+Program 45:
+
+The program must accept two positive integers N1 and N2 as the input. The program must print the smallest common factor of N1 and N2 which is greater than 1 as the output. If there is no common factor other than 1, then the program must print -1 as the output.
+
+Boundary Condition(s):
+2 <= N1, N2 <= 10^8
+
+Input Format:
+The first line contains the values of N1 and N2 separated by space(s).
+Output Format:
+The first line contains the common factor.
+Example Input/Output 1:
+Input:
+15 30
+Output:
+3
+Explanation:
+3 is the smallest number (greater than 1) which divides both 15 and 30.
+Hence 3 is printed.
+
+Example Input/Output 2:
+Input:
+3 7
+
+Output:
+-1
+
+
+
+
+
+
+
+
+
