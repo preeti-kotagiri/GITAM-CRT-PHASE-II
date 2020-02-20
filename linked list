@@ -1,0 +1,131 @@
+#include<stdlib.h>
+struct node
+{
+int item;
+struct node* link;
+};
+struct node *start;
+void insertion_begin()
+{
+int data;
+printf("enter info to insert");
+scanf("%d",&data);
+if(start==NULL)
+{
+    start=(struct node*)malloc(sizeof(struct node));
+    start->item=data;
+    start->link=NULL;}
+else
+{
+    struct node *temp;
+    temp=(struct node*)malloc(sizeof(struct node));
+    temp->item=data;
+    temp->link=start;
+    start=temp;
+}}
+void insert_end()
+{
+	struct node *temp,*ptr=start;
+	int data;
+
+	printf("enter the no:");
+	scanf("%d",&data);
+
+	if(start==NULL)
+	{
+		start=(struct node *)malloc(sizeof(struct node));
+		start->item=data;
+		start->link=NULL;
+	}
+	else
+	{
+		while(ptr->link!=NULL)
+		{
+			ptr=ptr->link;
+		}
+		temp=(struct node *)malloc(sizeof(struct node));
+		temp->item=data;
+		temp->link=NULL;
+		ptr->link=temp;
+	}
+}
+void delete_begin()
+{
+	struct node *dnode;
+       if(start==NULL)
+       {
+	   printf("\nlinked list is empty\n");
+	   return;
+        }
+       else if(start->link==NULL)
+       {
+	     dnode=start;
+	     start=NULL;
+       }
+      else
+      {
+	    dnode=start;
+	    start=start->link;
+      }
+
+printf("\n deleted item is %d:",dnode->item);
+free(dnode);//deleting the node
+}
+void delete_end()
+{
+	struct node *dnode,*p1,*p2;
+	if(start==NULL)
+	 {
+	     printf("\n linked list is empty\n");
+	     return;
+	 }
+       else if(start->link==NULL)
+       {
+	  dnode=start;
+	  start=NULL;
+       }
+       else
+       {
+	  p1=start;
+	  p2=start->link;
+	  while(p2->link!=NULL)
+	   {
+		   p1=p2;
+		   p2=p2->link;
+	   }
+	  dnode=p2;
+	  p1->link=NULL;
+      }
+  printf("\ndeleted item is %d:",dnode->info);
+    free(dnode);
+
+}
+
+void display()
+{
+    struct node*p;
+    if(start==NULL)
+    {
+        printf("list is empty");
+        return;
+    }
+    else
+    {
+        printf("elements are:");
+    for(p=start;p!=NULL;p=p->link)
+        printf("%d ",p->item);
+
+    }
+}
+void main()
+{
+    insertion_begin();
+    insertion_begin();
+    display();
+    delete_begin();
+    insert_end();
+    insert_end();
+    display();
+
+
+}
